@@ -1,0 +1,7 @@
+ for filter_word in open('D:\wncg\filtered_words.txt'):
+	fw=filter_word.rstrip()
+	if fw in user_input:
+		fw_len=len(fw)
+		user_input=user_input.replace(fw,'*'*fw_len)
+else:
+	print(user_input)
